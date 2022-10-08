@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">QuizPs1</string>
+    <string name="button_true">Prawda</string>
+    <string name="button_false">Fałsz</string>
+    <string name="button_next">Nastepne</string>
+    <string name="question1">2+2=4?</string>
+    <string name="question2">3*3=9?</string>
+    <string name="question3">2+2*2=8?</string>
+    <string name="question4">3+3*3=9?</string>
+    <string name="question5">5^3=125?</string>
+    <string name="correct_answer">Odp prawdziwa</string>
+    <string name="incorrect_answer">Odp fałszywa</string>
+</resources>
