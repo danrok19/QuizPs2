@@ -3,6 +3,7 @@ package com.example.quiz2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -43,10 +44,59 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    private static final String KEY_CURRENT_INDEX = "currentIndex";
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        Log.d("MainActicity", "Wywołana została metoda: onSaveInstanceState");
+        outState.putInt(KEY_CURRENT_INDEX, currentIndex);
+    }
+
+    @Override
+    protected void onStart() {
+
+        super.onStart();
+        Toast.makeText(getApplicationContext(), "onStart called", Toast.LENGTH_LONG).show();
+        Log.d("MainActivity","Wykonanie funkcji onStart");
+    }
+    @Override
+    protected void onResume(){
+        super.onResume();
+        Toast.makeText(getApplicationContext(), "onResume called", Toast.LENGTH_LONG).show();
+        Log.d("MainActivity","Wykonanie funkcji onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(getApplicationContext(), "onPause called", Toast.LENGTH_LONG).show();
+        Log.d("MainActivity","Wykonanie funkcji onPause");
+    }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+        Toast.makeText(getApplicationContext(),"onStop called",Toast.LENGTH_LONG).show();
+        Log.d("MainActivity","Wykonanie funkcji onStop");
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        Toast.makeText(getApplicationContext(),"onDestroy called",Toast.LENGTH_LONG).show();
+        Log.d("MainActivity","Wykonanie funkcji onDestroy");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("MainActivity","Wykonanie funkcji onCreate");
         setContentView(R.layout.activity_main);
+
+        if(savedInstanceState != null){
+            currentIndex = savedInstanceState.getInt(KEY_CURRENT_INDEX);
+        }
 
         trueButton = findViewById(R.id.true_button);
         falseButton = findViewById(R.id.false_button);
@@ -75,4 +125,6 @@ public class MainActivity extends AppCompatActivity {
         });
         setNextQuestion();
     }
+
+
 }
