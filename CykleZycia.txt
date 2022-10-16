@@ -1,0 +1,31 @@
+Po pierwszym uruchomieniu:
+- metoda onCreate
+- metoda onStart
+- metoda onResume
+Po wcisnięciu 'cofnij':
+- metoda onPause
+- metoda onStop
+Po ponownym uruchomieniu:
+- metoda onCreate
+- metoda onStart
+- metoda onResume
+Po wciśnięciu przycisku ekranu głównego Home:
+- metoda onPause
+- metoda onStop
+Po powrocie do aplikacji z listy ostatnio używanych aplikacji:
+- metoda onStart
+- metoda onResume
+Po zmianie orientacji:
+- metoda onPause
+- metoda onStop
+- metoda onDestroy
+- metoda onCreate
+- metoda onStart
+- metoda onResume
+Po zmianie orientacji z zachowanie stanu:
+- metoda onPause
+- metoda onStop
+- metoda onDestroy
+- metoda onCreate
+- metoda onStart
+- metoda onResume
