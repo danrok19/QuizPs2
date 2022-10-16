@@ -12,5 +12,6 @@
     <string name="incorrect_answer">Odp fałszywa</string>
     <string name="yes_sir">Yes Sir</string>
     <string name="button_prompt">Podpowiedz</string>
+    <string name="answer_was_shown">Odpowiedź była już wyświetlona</string>
 
 </resources>
