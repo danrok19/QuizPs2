@@ -20,8 +20,6 @@ X
 app/.gitignore,5\1\51e1c5d383dfaa35e0e7e5873a0a99355a86880f
 F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 w
 Gapp/src/androidTest/java/com/example/quiz2/ExampleInstrumentedTest.java,1\b\1b5299bf45699adc5e73fca4152ca37a704553c8
 h

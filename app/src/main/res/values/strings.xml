@@ -10,4 +10,7 @@
     <string name="question5">5^3=125?</string>
     <string name="correct_answer">Odp prawdziwa</string>
     <string name="incorrect_answer">Odp fałszywa</string>
+    <string name="yes_sir">Yes Sir</string>
+    <string name="button_prompt">Podpowiedz</string>
+
 </resources>
